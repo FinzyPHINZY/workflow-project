@@ -8,6 +8,7 @@ import {
   BreadcrumbList,
 } from './ui/breadcrumb';
 import React from 'react';
+import { MobileSideBar } from './DesktopSidebar';
 
 const BreadcrumbHeader = () => {
   const pathName = usePathname();
@@ -16,6 +17,7 @@ const BreadcrumbHeader = () => {
 
   return (
     <div>
+      <MobileSideBar />
       <Breadcrumb>
         <BreadcrumbList>
           {paths.map((path, i) => (
